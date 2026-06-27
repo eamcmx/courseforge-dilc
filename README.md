@@ -9,6 +9,7 @@ CLI — no API key) and write everything to a folder on your computer. Pick by w
 | **Lecture Wizard** | A single **interactive lecture page** from one source (PDF / slides / notes / YouTube) — live widgets, maths, a study buddy — saved as one standalone HTML. Its output can feed CourseForge. | [Releases ›](../../releases) → *Lecture Wizard* |
 
 > One requirement for **both**: **Claude Code (the `claude` CLI) installed and signed in** on each machine.
+> First time on a computer? Follow **[claude-setup.md](claude-setup.md)** (≈5 min).
 
 ---
 
