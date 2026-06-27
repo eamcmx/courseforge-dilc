@@ -79,7 +79,7 @@ From the **[Releases page](../../releases)**, open the **Lecture Wizard** releas
 
 | File | Use it if… |
 |---|---|
-| **Wizard-refactored-MCP-Setup-0.4.5-x64.exe** | Normal install (Start-menu shortcut). |
+| **Wizard-refactored-MCP-Setup-…-x64.exe** | Normal install (Start-menu shortcut). Grab the latest version. |
 
 Windows 10/11, 64-bit. Unsigned → at the SmartScreen prompt click **More info → Run anyway**.
 
