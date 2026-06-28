@@ -35,14 +35,12 @@ Windows 10/11, 64-bit.
 
 ### ✅ One-time setup on each machine
 
-The app checks both of these under **Settings → Check tools** and tells you if anything's missing.
+**Just one thing:** the **Claude CLI + your Claude account.** Install the `claude` CLI, then in the app click
+**Connect Claude** and complete the one-time *"Log in with your Claude account"* step (your **Claude Pro Max**
+account — no API key). That's it.
 
-1. **Claude CLI + your Claude account.** Install the `claude` CLI, then in the app click **Connect Claude**
-   and complete the one-time *"Log in with your Claude account"* step (your **Claude Pro Max** account — no API key).
-2. **Python 3** with three libraries (for reading PDFs/Word/PowerPoint and the quality checks):
-   ```
-   pip install pymupdf python-docx python-pptx
-   ```
+*(Python is bundled inside the app — nothing to install for reading PDFs/Word/PowerPoint or the quality checks.
+Use **Settings → Check tools** to confirm Claude is connected.)*
 
 ### 🚀 How to use it
 
