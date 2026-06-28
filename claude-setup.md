@@ -1,31 +1,38 @@
-# Setting up Claude Code (required for both tools)
+# Setting up Claude Code (the only requirement)
 
 Both **CourseForge** and the **Lecture Wizard** generate content by driving **your own
 Claude account** through the `claude` command-line tool — no API key, nothing shared. You
 install it once per machine and sign in with your own Claude (Pro or Max) subscription.
 
-> This is the **only** hard requirement. (CourseForge additionally needs Python — see its
-> section in the [README](README.md); the Wizard needs nothing else.)
+> This is the **only** hard requirement. CourseForge ships with everything else bundled
+> (Python and its libraries are inside the app — nothing else to install).
 
-## 1. Install Node.js
+## 1. Install Claude Code
 
-Claude Code runs on Node. If you don't already have it:
+### Recommended — native installer (no Node.js needed)
 
-- Download the **LTS** installer from **https://nodejs.org** and run it (accept the defaults).
-- Check it worked — open **PowerShell** and run:
-  ```
-  node --version
-  ```
-  Any **v18 or newer** is fine.
-
-## 2. Install Claude Code
-
-In **PowerShell**:
+In **PowerShell**, run:
 ```
-npm install -g @anthropic-ai/claude-code
+irm https://claude.ai/install.ps1 | iex
 ```
+That's it — the native installer has **no Node.js dependency** and keeps itself up to date.
 
-## 3. Start Claude and sign in (with YOUR account)
+*(Alternative: `winget install Anthropic.ClaudeCode`.)*
+
+### Fallback — npm (only if you prefer it; this one DOES need Node.js)
+
+If you'd rather install via npm, you must install **Node.js** first:
+
+1. Download the **LTS** installer from **https://nodejs.org**, run it (accept defaults), then
+   reopen PowerShell and check: `node --version` (any **v18+** is fine).
+2. Install Claude Code:
+   ```
+   npm install -g @anthropic-ai/claude-code
+   ```
+
+> 💡 Most people should just use the **native installer above and skip Node.js entirely.**
+
+## 2. Start Claude and sign in (with YOUR account)
 
 In a terminal, run:
 ```
@@ -36,14 +43,14 @@ claude
   terminal.
 - If it drops straight into a chat without asking, type **`/login`** and pick your account.
 
-## 4. Verify
+## 3. Verify
 
 ```
 claude -p "say OK"
 ```
 If it prints **`OK`**, you're done — Claude is installed and signed in.
 
-## 5. Open the app
+## 4. Open the app
 
 Launch **CourseForge** or the **Lecture Wizard**. Its tools-check / launch screen will now show
 **Claude detected** (green), and you can generate. It uses your Claude account behind the scenes
@@ -59,7 +66,8 @@ Launch **CourseForge** or the **Lecture Wizard**. Its tools-check / launch scree
   *401* or *"claude exited 1"* during generation), just run `claude` → `/login` again.
 - **`claude` is not recognized** right after installing → **close and reopen the terminal** so the
   PATH refreshes. If it still isn't found, reboot.
-- **`npm` is not recognized** → Node.js isn't installed yet (or the terminal predates it) — do
-  step 1 and reopen the terminal.
+- **If the native install fails** with a `403` or a curl/network error, see
+  https://code.claude.com/docs/en/troubleshoot-install — or use the npm fallback above.
+- **Git for Windows** is recommended (so Claude can use Bash); without it Claude falls back to PowerShell.
 
 *Internal TSI / DILC.*

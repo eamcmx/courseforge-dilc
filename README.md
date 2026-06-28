@@ -60,7 +60,9 @@ session done until it passes the quality gates (richness, interactive widgets, b
 ### ❓ Troubleshooting
 
 - **"Claude: not connected"** → open a terminal, run `claude`, finish the login, then click **Re-check**.
-- **"Python/extraction libs missing"** → install Python 3 and run the `pip install …` line above.
+  (Not installed yet? See **[claude-setup.md](claude-setup.md)** — the native installer needs **no Node.js**.)
+- **"Python/extraction libs missing"** → Python is bundled inside the app, so this shouldn't appear; if it
+  does, the install is incomplete — reinstall from the latest Setup.
 - **A session won't finish** → it re-authors on a failed gate; check the live activity feed. You can re-run it.
 
 ---
@@ -86,7 +88,8 @@ Windows 10/11, 64-bit. Unsigned → at the SmartScreen prompt click **More info 
 
 Only one thing is required: **Claude Code installed and signed in**.
 
-1. Install the `claude` CLI — https://docs.anthropic.com/en/docs/claude-code/overview
+1. Install the `claude` CLI — easiest is the native installer (no Node.js): in PowerShell run
+   `irm https://claude.ai/install.ps1 | iex`. Full guide + fallback: **[claude-setup.md](claude-setup.md)**.
 2. Open a terminal, run `claude`, and complete the login (your Claude account — no API key).
    Quick check: `claude -p "say OK"` should print `OK`.
 
