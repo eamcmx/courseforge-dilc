@@ -28,8 +28,8 @@ From the **[Releases page](../../releases)**, open the **CourseForge DILC** rele
 
 | File | Use it if… |
 |---|---|
-| **CourseForge-DILC-Setup-…-x64.exe** | You want a normal install (Start-menu shortcut, choose the folder). **Recommended.** |
-| **CourseForge-DILC-Portable-…-x64.exe** | You just want to run it with no install. |
+| **CourseForge-DILC-Setup-…-x64.exe** | A normal install (Start-menu shortcut, choose the folder). **Recommended — most reliable.** |
+| **CourseForge-DILC-Portable-…-x64.exe** | Only if you cannot install. It unpacks the bundled Python to a temp folder each launch, which is slower and occasionally incomplete — if you ever see *"engine isn't available"* or *"Bundled Python not found"*, use the **Setup** installer instead. |
 
 Windows 10/11, 64-bit.
 
