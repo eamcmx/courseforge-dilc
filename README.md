@@ -26,12 +26,9 @@ Claude Pro Max account** (no API key) and writes everything to a folder for you 
 
 From the **[Releases page](../../releases)**, open the **CourseForge DILC** release:
 
-| File | Use it if… |
-|---|---|
-| **CourseForge-DILC-Setup-…-x64.exe** | A normal install (Start-menu shortcut, choose the folder). **Recommended — most reliable.** |
-| **CourseForge-DILC-Portable-…-x64.exe** | Only if you cannot install. It unpacks the bundled Python to a temp folder each launch, which is slower and occasionally incomplete — if you ever see *"engine isn't available"* or *"Bundled Python not found"*, use the **Setup** installer instead. |
+Download **CourseForge-DILC-Setup-…-x64.exe** and run it (Start-menu shortcut; you can choose the install folder).
 
-Windows 10/11, 64-bit.
+Windows 10/11, 64-bit. At the SmartScreen prompt click **More info → Run anyway** (the installer is unsigned).
 
 ### ✅ One-time setup on each machine
 
