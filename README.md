@@ -30,6 +30,11 @@ Download **CourseForge-DILC-Setup-…-x64.exe** and run it (Start-menu shortcut;
 
 Windows 10/11, 64-bit. At the SmartScreen prompt click **More info → Run anyway** (the installer is unsigned).
 
+> **PAAL edition (optional).** The same release also carries **CourseForge-PAAL-Setup-…-x64.exe** — the
+> *Progressive AI-Augmented Learning* edition. It does everything DILC does **plus** a built-in consultation
+> that analyses **where AI belongs** in your course and adds a **per-lecture guided-prompt (Prompt Studio)**
+> section to each lecture. Install it instead of (or alongside) DILC if you want the AI-integration layer.
+
 ### ✅ One-time setup on each machine
 
 **Just one thing:** the **Claude CLI + your Claude account.** Install the `claude` CLI, then in the app click
